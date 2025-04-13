@@ -9,8 +9,6 @@ df = pd.read_csv('dataset.csv')
 print(df)
 input('Aperte enter para continuar! 😊\n')
 
-id = df['id']
-
 X = df.loc[:, 'Gender':'Family History of Mental Illness']
 print('Matriz de entrada (treinamento):\n', X)
 input('Aperte enter para continuar! 😊\n')
