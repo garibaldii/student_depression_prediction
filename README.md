@@ -79,6 +79,7 @@ Aqui será exibida a matriz de confusão gerada após o treinamento do modelo:
 ## Resultado da v1
 
 Abaixo está o resultado da primeira versão do primeiro treinamento:
+
 ![Primeira versão](https://github.com/leonfagundes27/Assets/blob/main/Images/v1-ia.png)
 
 ---
