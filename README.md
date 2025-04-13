@@ -70,9 +70,16 @@ pip install -r requirements.txt
 
 Aqui será exibida a matriz de confusão gerada após o treinamento do modelo:
 
-![Matriz de Confusão](confusion_matrix.png)
+![Matriz de Confusão](https://github.com/leonfagundes27/Assets/blob/main/Images/Matriz_confusão.png)
 
 > 💡 Dica: a imagem será salva automaticamente com `plt.savefig("confusion_matrix.png")` no script, se desejar persistir a figura.
+
+---
+
+## Resultado da v1
+
+Abaixo está o resultado da primeira versão do primeiro treinamento:
+![Primeira versão](https://github.com/leonfagundes27/Assets/blob/main/Images/v1-ia.png)
 
 ---
 
