@@ -1,4 +1,4 @@
-# 🤖 IA para Detecção de Depressão
+# 🤖 IA para Detecção de Depressão em Estudantes
 
 Este projeto utiliza aprendizado de máquina para detectar indícios de depressão a partir de dados de um questionário com atributos psicossociais. O modelo foi treinado com um classificador MLP (Multi-Layer Perceptron) da biblioteca `scikit-learn`.
 
