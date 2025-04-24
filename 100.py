@@ -20,21 +20,20 @@ input('Aperte enter para continuar! 😊\n')
 print(f'Quantidade de linhas e colunas: {X.shape}' )
 
 encoder = OneHotEncoder(sparse_output=False)
-X = encoder.fit_transform(df.loc[:, 'Gender':'Family History of Mental Illness'])
+# X = encoder.fit_transform(df.loc[:, 'Gender':'Family History of Mental Illness'])
+X = encoder.fit_transform(X)
 print('Matriz de entrada codificado (treinamento):\n', X)
 input('Aperte enter para continuar! 😊\n')
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
-print('\n Formato dados de treinamento: ', X_train.shape, Y_train.shape)
-print('\n Formato dados de teste: ', X_test.shape, Y_test.shape)
-input('Aperte enter para continuar! 😊\n')
 
 neural_network = MLPClassifier(
     verbose=True,
-    hidden_layer_sizes=(2, 8),
+    hidden_layer_sizes=(100),
     max_iter=2000,
-    tol=1e-5,
-    activation='relu'
+    tol=1e-6,
+    activation='relu',
+    learning_rate='adaptive'
 )
 
 neural_network.fit(X_train, Y_train)

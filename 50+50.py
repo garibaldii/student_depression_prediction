@@ -37,16 +37,15 @@ input('Aperte enter para continuar! 😊\n')
 
 print(f'Quantidade de linhas e colunas: {X.shape}')
 
-# Divisão dos dados (70% treino / 30% teste)
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3, random_state=42)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.15, random_state=42)
 print('\n Formato dados de treinamento: ', X_train.shape, Y_train.shape)
 print('\n Formato dados de teste: ', X_test.shape, Y_test.shape)
 input('Aperte enter para continuar! 😊\n')
 
 modelo = MLPClassifier(
-    hidden_layer_sizes=(10,),
-    max_iter=500,
-    tol=1e-3,
+    hidden_layer_sizes=(50, 50),
+    max_iter=1800,
+    tol=1e-5,
     activation='logistic',
     learning_rate='constant',
     verbose=True
@@ -68,7 +67,7 @@ print("Matriz de Confusão:")
 print(cm)
 
 ConfusionMatrixDisplay(confusion_matrix=cm).plot(cmap='Blues', colorbar=True)
-plt.title("Modelo com 10 neurônios (1 camada)")
+plt.title("Modelo com 50 + 50 neurônios (2 camadas)")
 plt.show()
 
 print("\nClasses = ", modelo.classes_)
