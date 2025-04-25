@@ -117,7 +117,7 @@ Ao rodar o script, você verá saídas no console indicando os dados processados
 
 ## 📎 Autor
 
-Desenvolvido por [Seu Nome](https://github.com/seu-usuario) 😊  
+Desenvolvido por [Leon Fagundes](https://github.com/leonfagundes27), [Vitor Ruan](https://github.com/VitorRuan) e [Matheus Garibaldi](https://github.com/garibaldii)
 Sinta-se à vontade para contribuir ou sugerir melhorias!
 
 ---
