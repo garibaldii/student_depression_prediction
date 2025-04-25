@@ -1,13 +1,32 @@
 # 🤖 IA para Detecção de Depressão em Estudantes
 
-Este projeto utiliza aprendizado de máquina para detectar indícios de depressão a partir de dados de um questionário com atributos psicossociais. O modelo foi treinado com um classificador MLP (Multi-Layer Perceptron) da biblioteca `scikit-learn`.
+Este projeto utiliza aprendizado de máquina para detectar indícios de depressão a partir de dados de um questionário com atributos psicossociais. O modelo foi treinado com diferentes arquiteturas de MLPs (Multi-Layer Perceptrons) utilizando a biblioteca `scikit-learn`.
+
+---
+
+## 📄 Relatório dos Modelos
+
+📎 **[Clique aqui para acessar o relatório completo dos 10 modelos (PDF)](https://github.com/leonfagundes27/Assets/blob/main/Images/Relat%C3%B3rio%20(2).pdf)**  
+O relatório contém detalhes sobre a estrutura de cada rede neural, métricas de desempenho e análise dos resultados.
+
+---
+
+## 📊 Tabela Comparativa de Acurácia
+
+Abaixo está a tabela com os resultados obtidos por cada modelo:
+
+<img src="https://github.com/leonfagundes27/Assets/blob/main/Images/tabela.png" style="width:70%;">
+
+---
 
 ## 📦 Estrutura do Projeto
 
 - `dataset.csv` → Base de dados com respostas dos participantes. Disponível [aqui](https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset).
-- `main.py` → Script principal que realiza todo o pipeline de pré-processamento, treino e avaliação.
+- Arquivos `.py` → Scripts com arquiteturas distintas de MLP:
+  - `10.py`, `20.py`, `50.py`, `100.py`, `200.py`
+  - `10+10.py`, `20+20.py`, `50+50.py`, `100+100.py`, `200+200.py`
 - `requirements.txt` → Lista de dependências do projeto.
-- `.gitignore` → Arquivos a serem ignorados pelo Git.
+- `.gitignore` → Arquivos ignorados pelo Git.
 
 ---
 
@@ -68,17 +87,13 @@ pip install -r requirements.txt
 
 ## 📊 Matriz de Confusão
 
-Aqui será exibida a matriz de confusão gerada após o treinamento do modelo:
-
 ![Matriz de Confusão](https://github.com/leonfagundes27/Assets/blob/main/Images/Matriz_confusão.png)
 
-> 💡 Dica: a imagem será salva automaticamente com `plt.savefig("confusion_matrix.png")` no script, se desejar persistir a figura.
+> 💡 A imagem será salva automaticamente com `plt.savefig("confusion_matrix.png")`.
 
 ---
 
 ## Resultado da v1
-
-Abaixo está o resultado da primeira versão do primeiro treinamento:
 
 ![Primeira versão](https://github.com/leonfagundes27/Assets/blob/main/Images/v1-ia.png)
 
